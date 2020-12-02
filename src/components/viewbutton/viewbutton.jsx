@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Box, makeStyles } from "@material-ui/core";
+import { makeStyles } from "@material-ui/core";
 import ArrowRightAltIcon from "@material-ui/icons/ArrowRightAlt";
 import BootstrapButton from "@material-ui/core/Button";
 

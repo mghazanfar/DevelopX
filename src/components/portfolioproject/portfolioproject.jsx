@@ -1,23 +1,22 @@
 import React from "react";
-import { Grid, Box, makeStyles, rgbToHex } from "@material-ui/core";
+import { Grid, Box, makeStyles } from "@material-ui/core";
 import Card from "@material-ui/core/Card";
-
 import CardContent from "@material-ui/core/CardContent";
-
 import Typography from "@material-ui/core/Typography";
 
 export const PortfolioProject = (props) => {
   const useStyles = makeStyles((theme) => ({
     bgcolor: {
       backgroundColor: props.color,
-      transform: "rotate(45deg)",
+      transform: props.reverse ? "rotate(45deg)" : "rotate(45deg)",
       padding: "22%",
       borderRadius: 800,
       height: "93vh",
       zIndex: -2,
       backgroundImage: `url(${props.image})`,
       backgroundRepeat: "no-repeat",
-      backgroundSize: "cover",
+      backgroundPosition: "center",
+      backgroundSize: "contain",
     },
     titlemargn: {
       display: "flex",
@@ -37,14 +36,13 @@ export const PortfolioProject = (props) => {
       lineHeight: 1.14,
     },
     bgcard: {
-      width: " 118%",
+      width: "118%",
       height: "50%",
       backgroundColor: "transparent",
-      marginLeft: 80,
       padding: 20,
-      backgroundColor: " rgba(255, 255, 255, 0.8)",
+      backgroundColor: "rgba(255, 255, 255, 0.8)",
       boxShadow: "rgba(0, 0, 0, 0.3) 10px 10px 30px 0px;",
-      marginLeft: 150,
+      marginLeft: props.reverse ? -150 : 150,
     },
     discription: {
       fontWeight: 400,
@@ -67,7 +65,13 @@ export const PortfolioProject = (props) => {
   }));
   const classes = useStyles();
   return (
-    <Grid container>
+    <Grid
+      container
+      style={{
+        flexDirection: props.reverse ? "row-reverse" : "row",
+        marginTop: 250,
+      }}
+    >
       <Grid item xs={4}>
         <Card className={classes.bgcard}>
           <CardContent>

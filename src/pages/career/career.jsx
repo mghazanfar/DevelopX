@@ -3,25 +3,15 @@ import DevelopxAppBar from "../../components/appbar/appbar";
 import { makeStyles, Box, Grid } from "@material-ui/core";
 import Careers from "../../components/careercard/careercard";
 const useStyles = makeStyles({
-  bgclr: {
-    backgroundColor: "#a4c936",
-    backgroundImage:
-      "url(https://upload.wikimedia.org/wikipedia/commons/1/15/Career_Change_Excitement_Cartoon.svg)",
-    backgroundRepeat: "no-repeat",
-    minWidth: "100vw",
-  },
   titlefont: {
-    color: "#f1f05e",
     fontFamily: "none",
     fontSize: 50,
     fontWeight: " bolder",
     textAlign: " center",
   },
   subtitle: {
-    color: "#ff1e59",
-    fontSize: 20,
-    fontFamily: "none",
-    fontWeight: "bolder",
+    color: "grey",
+    fontSize: 23,
     lineHeight: 3,
     textAlign: "center",
   },
@@ -32,7 +22,7 @@ const useStyles = makeStyles({
 export const Career = (props) => {
   const classes = useStyles();
   return (
-    <div className={classes.bgclr}>
+    <div>
       <DevelopxAppBar selected="4" />
       <Box>
         <Box className={classes.titlefont}>Careers</Box>

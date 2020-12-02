@@ -94,7 +94,7 @@ function DevelopxAppBarWrapped(props) {
           >
             <Box className={classes.contactmargin}>
               <Box className={classes.logofont} href="#root">
-                Developx
+                DevelopX
               </Box>
             </Box>
             <Box className={[classes.dflex]}>
