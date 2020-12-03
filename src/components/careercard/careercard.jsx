@@ -21,6 +21,7 @@ const useStyles = makeStyles({
   },
   texttransform: {
     textTransform: "capitalize",
+    fontFamily: "MyFontRegular",
   },
 
   btnclr: {
@@ -40,11 +41,12 @@ const useStyles = makeStyles({
     backgroundColor: "#dbeaff",
     border: " 1px solid transparent",
     padding: 6,
-    fontFamily: "auto",
+    fontFamily: "MyFontRegular",
   },
   btnfontfamily: {
     fontSize: 12,
     fontWeight: 600,
+    fontFamily: "MyFontRegular",
   },
 });
 
@@ -55,8 +57,10 @@ export default function Careers(props) {
   return (
     <Card>
       <CardContent>
-        <Box>
-          <Typography color="textSecondary">{props.date}</Typography>
+        <Box fontFamily="MyFontRegular">
+          <Typography color="textSecondary">
+            <Box fontFamily="MyFontRegular">{props.date}</Box>
+          </Typography>
           <Typography className={classes.texttransform}>
             {props.city}
           </Typography>
@@ -72,7 +76,7 @@ export default function Careers(props) {
         </Box>
         <Button
           className={[classes.texttransform, classes.btnfontfamily]}
-          href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=careers@developx.tech&tf=1"
+          href={`https://mail.google.com/mail/u/0/?view=cm&fs=1&to=careers@developx.tech&tf=1&su=${props.jobprogram}&body=Hello. I want to apply for ${props.jobprogram}. Please review my annexed resume and contact me at:`}
           target="_blank"
         >
           Apply

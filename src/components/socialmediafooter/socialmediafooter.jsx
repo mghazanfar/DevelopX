@@ -44,7 +44,7 @@ export const SocialMediaFooter = (props) => {
         © 2020 DevelopX Technologies, Inc. All rights reserved.
       </Grid>
       <Grid item xs={12} sm={6} md={5}>
-        <Box display="flex" flexWrap="wrap">
+        <Box display="flex" flexWrap="wrap" justifyContent="flex-end">
           <IconButton disabled>
             <img
               className={classes.iconheight}

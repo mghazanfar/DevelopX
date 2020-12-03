@@ -9,6 +9,7 @@ import { SocialMediaFooter } from "../../components/socialmediafooter/socialmedi
 import GetInTouch from "../../components/getintouch/getintouch";
 import { Link } from "react-router-dom";
 import { ViewButton } from "../../components/viewbutton/viewbutton";
+import { Box } from "@material-ui/core";
 
 export const HomePage = (props) => {
   return (
@@ -30,12 +31,18 @@ export const HomePage = (props) => {
       </div>
       <Portfolio />
       <HomePageCard
-        title=" hubbi core"
-        discrption=" hubbi core is focused on user friendliness and combines a wallet manager and exchange. The solution was made open source in September 2018 and the wallet manager went live on public mainnet in November 2018. "
+        title="hubbi core"
+        discrption="hubbi core is focused on user friendliness and combines a wallet manager and exchange. The solution was made open source in September 2018 and the wallet manager went live on public mainnet in November 2018. "
       />
-      <Link to="/view-portfolio">
-        <ViewButton text="View Portfolio" showArrow color="#ff1e58" />
-      </Link>
+      <Box textAlign="center">
+        <ViewButton
+          text="View Portfolio"
+          showArrow
+          color="#ff1e58"
+          component={Link}
+          to="/view-portfolio"
+        />
+      </Box>
       <GlobalBusiness />
       <GetInTouch />
       <Footer />

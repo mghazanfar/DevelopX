@@ -8,7 +8,7 @@ export const PortfolioProject = (props) => {
   const useStyles = makeStyles((theme) => ({
     bgcolor: {
       backgroundColor: props.color,
-      transform: props.reverse ? "rotate(45deg)" : "rotate(45deg)",
+      transform: "rotate(45deg)",
       padding: "22%",
       borderRadius: 800,
       height: "93vh",
@@ -28,7 +28,7 @@ export const PortfolioProject = (props) => {
       marginLeft: 15,
       fontSize: 20,
       fontWeight: 900,
-      fontFamily: "revert",
+      fontFamily: "MyFontRegular",
     },
     subtitle: {
       fontWeight: 900,
@@ -46,7 +46,7 @@ export const PortfolioProject = (props) => {
     },
     discription: {
       fontWeight: 400,
-
+      fontFamily: "MyFontRegular",
       fontSize: 20,
       lineHeight: 1.2,
     },

@@ -24,10 +24,12 @@ const useStyles = makeStyles({
     fontSize: 28,
     fontWeight: 900,
     color: "#017aff",
+    fontFamily: "MyFontBold",
   },
   discrptionfont: {
     fontSize: 20,
     fontWeight: 400,
+    fontFamily: "MyFontRegular",
     color: "#6b727f",
   },
   btnMargin: {

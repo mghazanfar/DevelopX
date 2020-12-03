@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
     fontSize: 20,
     width: "55%",
-    fontFamily: "sans-serif",
+    fontFamily: "MyFontRegular",
 
     paddingLeft: "22%",
     lineHeight: 1.2,
@@ -37,15 +37,11 @@ export const Portfolio = (props) => {
     <Box id="portfolio">
       <Box className={classes.headingfont}>What We Do?</Box>
       <Box className={classes.parafonts}>
-        Our machine vision products and platform powers mobile, fixed, and
-        wearables cameras to see the world like the human eye. Our solutions are
-        deployed across industries to understand and describe the visual
-        information from text, images, videos, barcodes, QR codes, and live
-        scenes. Our proprietary algorithms and decision systems draw insights,
-        establish baselines, and deliver real-time alerts and actions by a human
-        or machine to enhance productivity, increase sales, reduce costs, and
-        transform the experience for businesses and their end-users. View
-        Portfolio
+        We have a refined and planned program after we have taken up a venture.
+        We offer the stage from where the ventures take shape through stages of
+        arranging, testing and execution. In this angle we take after an
+        dexterous strategy and run the extend through a circle of criticism and
+        steady advancement. Our portfolio below says it all:
       </Box>
     </Box>
   );

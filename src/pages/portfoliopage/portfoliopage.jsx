@@ -30,12 +30,28 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: "43%",
     marginTop: 30,
   },
+  titlefont: {
+    fontFamily: "none",
+    fontSize: 50,
+    fontWeight: "bolder",
+    textAlign: "center",
+    fontFamily: "MyFontRegular",
+  },
+  subtitle: {
+    color: "grey",
+    fontSize: 23,
+    lineHeight: 2,
+    textAlign: "center",
+    fontFamily: "MyFontRegular",
+    width: "60%",
+  },
 }));
 export const PortfolioPage = (props) => {
   const classes = useStyles();
   return (
     <Box>
       <DevelopxAppBar selected="2" color="black" />
+
       <PortfolioProject
         title=" PackageX"
         discription1="PackageX powers the future of digital and contactless mailroom and transforms the end-user experience. PackageX uses machine vision to track packages and assets with a simple photo across industries, including higher education, real estate, and co-working spaces."
