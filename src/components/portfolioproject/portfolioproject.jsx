@@ -37,7 +37,6 @@ export const PortfolioProject = (props) => {
     },
     bgcard: {
       width: "118%",
-      height: "50%",
       backgroundColor: "transparent",
       padding: 20,
       backgroundColor: "rgba(255, 255, 255, 0.8)",

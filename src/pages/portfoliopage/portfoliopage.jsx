@@ -93,7 +93,7 @@ export const PortfolioPage = (props) => {
         discription2="We design, develop and deliver beautiful websites and Mail Chimp. We design, develop and deliver beautiful websites and Mail ChimpWe design, develop and deliver beautiful websites and Mail Chimp"
         reverse
         color="rgb(28, 44, 65)"
-        image="https://geoffreymultimedia.com/wp-content/uploads/2016/07/freelance-web-designer.png"
+        image="https://despar.s3-eu-west-1.amazonaws.com/webroot/img/asset/banner_lavora_con_noi_veneto.jpg"
       />
       <Footer />
       <SocialMediaFooter />
