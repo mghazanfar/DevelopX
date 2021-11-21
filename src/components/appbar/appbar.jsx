@@ -132,6 +132,33 @@ function DevelopxAppBarWrapped(props) {
                   className={[
                     classes.hoverEffect,
                     classes.texttransfrm,
+                    props.selected === "4" && classes.btnbgclr,
+                  ]}
+                  href="#tech"
+                >
+                  Technologies
+                </Button>
+              </Box>
+              <Box className={classes.linkmargin}>
+                <Button
+                  color="inherit"
+                  className={[
+                    classes.hoverEffect,
+                    classes.texttransfrm,
+                    props.selected === "4" && classes.btnbgclr,
+                  ]}
+                  href="#team"
+                >
+                  Our team
+                </Button>
+              </Box>
+
+              <Box className={classes.linkmargin}>
+                <Button
+                  color="inherit"
+                  className={[
+                    classes.hoverEffect,
+                    classes.texttransfrm,
                     props.selected === "3" && classes.btnbgclr,
                   ]}
                   component={Link}
