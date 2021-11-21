@@ -87,7 +87,7 @@ export default function GlobalBusiness() {
   ];
   return (
     <Box className={classes.titlefont} id="tech">
-      <h2>Our expertise</h2>
+      <h2>Our Expertise</h2>
       <Box display="flex" flexWrap="wrap" justifyContent="center" p={3} maxWidth="70%" alignItems="center">
         {techs.map(tech=>
         <Box mt={1} mr={1} border="1px solid grey" borderRadius="8px" p={1} display="flex" alignItems="center" bgcolor="antiquewhite">
