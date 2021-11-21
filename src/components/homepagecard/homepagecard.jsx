@@ -16,6 +16,7 @@ const useStyles = makeStyles({
   },
   imgwidth: {
     maxWidth: "100%",
+    height: 145
   },
   cardpadding: {
     padding: 80,
@@ -59,7 +60,8 @@ export default function HomePageCard(props) {
           <CardContent>
             <img
               className={classes.imgwidth}
-              src="https://www.hubii.com/wp-content/uploads/2018/05/hubii_core.png"
+              src="https://pbs.twimg.com/profile_images/969169619289243648/F1dOoxNz_400x400.jpg"
+              alt="hubii"
             />
 
             <Typography

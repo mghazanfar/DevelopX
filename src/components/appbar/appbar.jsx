@@ -22,6 +22,10 @@ const useStyles = makeStyles((theme) => ({
 
   dflex: {
     display: "flex",
+    [theme.breakpoints.up("md")]:{
+      width: "50%",
+      justifyContent: "space-between"
+    }
   },
   hoverEffect: {
     color: "#1BA098",

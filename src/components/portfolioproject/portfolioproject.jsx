@@ -68,10 +68,10 @@ export const PortfolioProject = (props) => {
       container
       style={{
         flexDirection: props.reverse ? "row-reverse" : "row",
-        marginTop: 250,
+        marginTop: props.isFirst ? 150 : 250,
       }}
     >
-      <Grid item xs={4}>
+      <Grid item xs={6} sm={4}>
         <Card className={classes.bgcard}>
           <CardContent>
             <Typography>

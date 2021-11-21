@@ -52,29 +52,29 @@ export const PortfolioPage = (props) => {
     <Box>
       <DevelopxAppBar selected="2" color="black" />
 
+      <Box textAlign="center" marginTop="50px" fontSize="xx-large">Our Clients</Box>
       <PortfolioProject
         title=" PackageX"
         discription1="PackageX powers the future of digital and contactless mailroom and transforms the end-user experience. PackageX uses machine vision to track packages and assets with a simple photo across industries, including higher education, real estate, and co-working spaces."
         color="#DEB992"
-        image="https://packagex.app/static/mailroom-home-image-36cdd76ddb8a31e398bd35df5ec223bb.svg"
+        image={require("../../assets/px.webp")}
+        isFirst
       />
       <PortfolioProject
         title="hubbi core"
         discription1="hubbi core is focused on user friendliness and combines a wallet manager and exchange. The solution was made open source in September 2018 and the wallet manager went live on public mainnet in November 2018."
         discription2=""
         color="rgb(2, 182, 124)"
-        image="https://miro.medium.com/max/1400/1*LmoPuOiGU4GIxkJ-VtnNVg.png"
+        image={require("../../assets/hubii.png")}
         reverse
       />
       <PortfolioProject
         title="Mevris"
         discription1="Enjoy the most comprehensive IOT platform that is secure, reliable, scale-able and flexible while connecting all your devices and appliances together. Get IOT solutions that are faster and better than ever before!"
-        discription2="Successful integration of a chatbot algorithm that helps user control devices and appliances by chatting with them in real-time.
-
-"
+        discription2="Successful integration of a chatbot algorithm that helps user control devices and appliances by chatting with them in real-time."
         color="rgb(28, 44, 65)"
-        image="https://cdn.shopify.com/s/files/1/0278/7052/7560/files/iot-ecosystem_2x_b6de9809-60d9-49ca-8fdd-22898c3a7bae.png?v=1597326629"
-      />
+        image={require("../../assets/mevris.jpeg")}
+              />
       <PortfolioProject
         title="zhutravel"
         discription2=" In 2016, Zhutravel was born dedicated to create the perfect experience in Portugal & Spain for Chinese customer.In 2018, we expanded into offering taylor made solutions to government and business delegates in Portugal. We are in Portugal since 1983, there is no doubt we will find the right solution for you. In 2019, we started our daily tours in Portugal to share our love for the country and our passion to travel."
@@ -89,12 +89,20 @@ export const PortfolioPage = (props) => {
         image="https://veeve.io/images/img-cart-veeve.png"
       />
       <PortfolioProject
-        title="Lavoro"
-        discription2="We design, develop and deliver beautiful websites and Mail Chimp. We design, develop and deliver beautiful websites and Mail ChimpWe design, develop and deliver beautiful websites and Mail Chimp"
+        title="Ecency"
+        discription2="Ecency is a blockchain based social network - powered by Hive. Ecency is home of free speech and rewarding communities for content creators. Project is founded by @good-karma in August 2016 as an alternative social network that's uncensored, user controled, immutable and opensource. Currently there are many independent and voluntary contributors wanting to keep vision and spirit of free speech. Ecency helps onboarding masses into Blockchain technology where users are getting paid for their time, resources and learn while enjoying social aspects of blockchain. Through ease of use, users not only learn but also become investors, innovators of the new internet."
         reverse
         color="rgb(28, 44, 65)"
-        image="https://despar.s3-eu-west-1.amazonaws.com/webroot/img/asset/banner_lavora_con_noi_veneto.jpg"
+        image={require("../../assets/ecency.png")}
       />
+      <Box marginBottom="200px">
+        <PortfolioProject
+          title="Shoebacca"
+          discription2="SHOEBACCA.COM got its very humble beginnings when two community-minded brothers named Marc and Robert Schlachter started selling used name-brand athletic shoes to underprivileged families at local neighborhood markets. Along with those early grass-roots efforts, they also shipped truckloads of shoes to areas all over the world, primarily to third-world countries where the need was greatest. This became the inspiration for SHOEBACCA.com, and helped set the tone for this new business and outreach program. Officially formed in 2002, SHOEBACCA.com identified an opportunity to extend its reach by establishing itself as a reseller on eBay. After a number of successful years operating on eBay's platform, SHOEBACCA.com launched a full-scale retail website in the spring of 2007. Through word of mouth, SHOEBACCA.com quickly became a leader in the online footwear retail market, offering thousands of styles by many of the world's best shoe brands at competitive prices. Attention was immediately placed on growth through proper placement, innovative technologies, competitive shipping processes, and professional customer service. SHOEBACCA.com is located in Irving, Texas with its home office and adjacent 250,000 square-foot warehouse. At any given time, there are as many as 25,000 styles of shoes, accessories, and athletic gear housed within the Irving facility."
+          color="aqua"
+          image={require("../../assets/shoebacca.jpeg")}
+        />
+      </Box>
       <Footer />
       <SocialMediaFooter />
     </Box>
