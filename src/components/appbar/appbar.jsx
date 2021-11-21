@@ -6,7 +6,8 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Button from "@material-ui/core/Button";
 
 import { Box, Grid, withWidth } from "@material-ui/core";
-import { Link, withRouter } from "react-router-dom";
+import { Link, useHistory, withRouter } from "react-router-dom";
+import { useState } from "react";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -90,6 +91,8 @@ const useStyles = makeStyles((theme) => ({
 
 function DevelopxAppBarWrapped(props) {
   const classes = useStyles();
+  const [selected,setSelected] = useState("1");
+  const {location: {pathname}} = useHistory()
 
   return (
     <div className={classes.root}>
@@ -134,10 +137,11 @@ function DevelopxAppBarWrapped(props) {
                   className={[
                     classes.hoverEffect,
                     classes.texttransfrm,
-                    props.selected === "1" && classes.btnbgclr,
+                    (selected === "1" && !pathname.includes("career")) && classes.btnbgclr,
                   ]}
                   component={Link}
                   to="/#root"
+                  onClick={()=>setSelected("1")}
                 >
                   About
                 </Button>
@@ -149,8 +153,9 @@ function DevelopxAppBarWrapped(props) {
                   className={[
                     classes.hoverEffect,
                     classes.texttransfrm,
-                    props.selected === "2" && classes.btnbgclrBlack,
+                    selected === "2" && classes.btnbgclrBlack,
                   ]}
+                  onClick={()=>setSelected("2")}
                 >
                   Portfolio
                 </Button>
@@ -162,9 +167,10 @@ function DevelopxAppBarWrapped(props) {
                   className={[
                     classes.hoverEffect,
                     classes.texttransfrm,
-                    props.selected === "4" && classes.btnbgclr,
+                    selected === "5" && classes.btnbgclr,
                   ]}
                   href="#tech"
+                  onClick={()=>setSelected("5")}
                 >
                   Technologies
                 </Button>
@@ -175,9 +181,10 @@ function DevelopxAppBarWrapped(props) {
                   className={[
                     classes.hoverEffect,
                     classes.texttransfrm,
-                    props.selected === "4" && classes.btnbgclr,
+                    selected === "6" && classes.btnbgclr,
                   ]}
                   href="#team"
+                  onClick={()=>setSelected("6")}
                 >
                   Our team
                 </Button>
@@ -189,9 +196,10 @@ function DevelopxAppBarWrapped(props) {
                   className={[
                     classes.hoverEffect,
                     classes.texttransfrm,
-                    props.selected === "3" && classes.btnbgclr,
+                    selected === "3" && classes.btnbgclr,
                   ]}
                   href="/#contact"
+                  onClick={()=>setSelected("3")}
                 >
                   Contact
                 </Button>
@@ -202,9 +210,10 @@ function DevelopxAppBarWrapped(props) {
                   className={[
                     classes.hoverEffect,
                     classes.texttransfrm,
-                    props.selected === "4" && classes.btnbgclr,
+                    (selected === "4" || pathname.includes("career")) && classes.btnbgclr,
                   ]}
                   component={Link}
+                  onClick={()=>setSelected("4")}
                   to="/career"
                 >
                   Career
