@@ -28,8 +28,6 @@ const useStyles = makeStyles({
 function FooterWraaped(props) {
   const classes = useStyles();
 
-  const [count, setCount] = useState(0);
-
   return (
     <Grid
       container
@@ -42,7 +40,7 @@ function FooterWraaped(props) {
       alignItems="center"
     >
       <Grid item xs={12} sm={6} md={3}>
-        <a href="#">
+        <a href="/">
           <img src={logo} />
         </a>
       </Grid>
@@ -57,11 +55,17 @@ function FooterWraaped(props) {
         flexDirection="column"
         className={classes.gridlineheight}
       >
-        <span>Technologies</span>
+        <a href="/" style={{ color: "black", textDecoration: "none" }}>
+          Technologies
+        </a>
 
-        <span>Portfolio</span>
+        <a href="#portfolio" style={{ color: "black", textDecoration: "none" }}>
+          Portfolio
+        </a>
 
-        <span>About</span>
+        <a href="#root" style={{ color: "black", textDecoration: "none" }}>
+          About
+        </a>
       </Grid>
       <Grid
         item
@@ -73,10 +77,12 @@ function FooterWraaped(props) {
         flexDirection="column"
         className={classes.gridlineheight}
       >
-        <span>Contact</span>
-        <span component={Link} to="/career">
+        <a href="#contact" style={{ color: "black", textDecoration: "none" }}>
+          Contact
+        </a>
+        <Link to="/career" style={{ color: "black", textDecoration: "none" }}>
           Careers
-        </span>
+        </Link>
         <span>Information Security</span>
       </Grid>
       <Grid
@@ -92,7 +98,9 @@ function FooterWraaped(props) {
         <span>Privacy Policy</span>
         <span>Terms of Service</span>
 
-        <span>Feedback</span>
+        <a href="#contact" style={{ color: "black", textDecoration: "none" }}>
+          Feedback
+        </a>
       </Grid>
     </Grid>
   );

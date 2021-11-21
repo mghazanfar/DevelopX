@@ -6,25 +6,34 @@ const useStyles = makeStyles({
   titlefont: {
     fontFamily: "none",
     fontSize: 50,
-    fontWeight: " bolder",
-    textAlign: " center",
+    fontWeight: "bolder",
+    textAlign: "center",
+    fontFamily: "MyFontRegular",
   },
   subtitle: {
     color: "grey",
     fontSize: 23,
-    lineHeight: 3,
+    lineHeight: 2,
     textAlign: "center",
+    fontFamily: "MyFontRegular",
+    width: "60%",
   },
   containerpadding: {
     padding: "78px",
+    paddingBottom: 0,
   },
 });
 export const Career = (props) => {
   const classes = useStyles();
   return (
-    <div>
+    <Box
+      bgcolor="rgb(224 227 237)"
+      minHeight="100vh"
+      padding={"20px 5px"}
+      style={{ overflowX: "hidden" }}
+    >
       <DevelopxAppBar selected="4" />
-      <Box>
+      <Box display="flex" flexDirection="column" alignItems="center">
         <Box className={classes.titlefont}>Careers</Box>
         <Box className={classes.subtitle}>
           The Developx team lives and breathes cutting-edge technology. Apply to
@@ -38,59 +47,59 @@ export const Career = (props) => {
         >
           <Grid item xs={12} lg={4}>
             <Careers
-              date="8 October 2020"
-              city="-Remote,PK"
+              date="2nd November, 2020"
+              city="- Remote, PK"
+              jobprogram="Fullstack Javascript Engineer"
+              btnleft="Technology"
+              btnright="Read More"
+            />
+          </Grid>
+          <Grid item xs={12} lg={4}>
+            <Careers
+              date=" 2nd November, 2020"
+              city="- Remote, PK"
+              jobprogram="Frontend Engineer"
+              btnleft="Technology"
+              btnright=" Read More"
+            />
+          </Grid>
+          <Grid item xs={12} lg={4}>
+            <Careers
+              date="2nd November, 2020"
+              city="- Remote, PK"
+              jobprogram="Backend Engineer"
+              btnleft="Technology"
+              btnright=" Read More"
+            />
+          </Grid>
+          <Grid item xs={12} lg={4}>
+            <Careers
+              date="2nd November, 2020"
+              city="- Remote, PK"
+              jobprogram="ReactJS Frontend Engineer"
+              btnleft="Technology"
+              btnright="Read More"
+            />
+          </Grid>
+          <Grid item xs={12} lg={4}>
+            <Careers
+              date="8th October 2020"
+              city="- Lahore, PK"
               jobprogram="Developx Internship Program"
               btnleft="Technology"
             />
           </Grid>
           <Grid item xs={12} lg={4}>
             <Careers
-              date="8 October 2020"
-              city="    -Remote,PK"
-              jobprogram=" Developx Internship Program"
-              btnleft="  Technology"
-              btnright=" Read More"
-            />
-          </Grid>
-          <Grid item xs={12} lg={4}>
-            <Careers
-              date="8 October 2020"
-              city="    -Remote,PK"
-              jobprogram=" Developx Internship Program"
-              btnleft="  Technology"
-              btnright=" Read More"
-            />
-          </Grid>
-          <Grid item xs={12} lg={4}>
-            <Careers
-              date=" 8 October 2020"
-              city="   -Remote ,PK"
-              jobprogram=" Developx Internship Program"
-              btnleft="  Technology"
-              btnright=" Read More"
-            />
-          </Grid>
-          <Grid item xs={12} lg={4}>
-            <Careers
-              date="8 October 2020"
-              city="    -Remote,PK"
-              jobprogram=" Developx Internship Program"
-              btnleft="  Technology"
-              btnright=" Read More"
-            />
-          </Grid>
-          <Grid item xs={12} lg={4}>
-            <Careers
-              date="8 October 2020"
-              city="   -Remote,PK"
-              jobprogram=" Developx Internship Program"
+              date="2nd November, 2020"
+              city="- Remote, PK"
+              jobprogram="Developx Internship Program"
               btnleft="  Technology"
               btnright=" Read More"
             />
           </Grid>
         </Grid>
       </Box>
-    </div>
+    </Box>
   );
 };

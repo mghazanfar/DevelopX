@@ -28,7 +28,6 @@ export const ViewButton = ({
       padding: 10,
       paddingRight: 25,
       paddingLeft: 25,
-      marginLeft: 80,
     },
     arrowfont: {
       marginLeft: 20,

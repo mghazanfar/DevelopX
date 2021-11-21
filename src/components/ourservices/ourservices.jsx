@@ -66,20 +66,18 @@ const OurServicesWrapped = ({ width }) => {
       <Grid item xs={10} sm={4} md={4}>
         <Box className={classes.titlemargn}>
           <Box className={classes.linedraw} />
-          <Box className={classes.titlefont}>Our Services</Box>
+          <Box className={classes.titlefont}>Our administrations</Box>
         </Box>
-        <Box className={classes.subtitle}>What We Do</Box>
-        <Box className={classes.subTitle}>And How We Do It</Box>
+        <Box className={classes.subtitle}>DevelopX</Box>
+        <Box className={classes.subTitle}>Creating impact</Box>
         <p className={classes.discrptionpara1}>
-          We work on the future-tech today. Our digital solutions
-          are shaping the way people use and interact with technology. Do you
-          think your business is ready for a digital transformation? We can help
+          While working on the succeeding technologies, our digitated solutions
+          are defining the human interactions with software.  Is your business
+          requiring computerized revision then we are definitely there to help
+          your business grow by updating your operations, using transpiring
+          technicalities.
         </p>
-        <p className={classes.discrptionpara1}>
-          you revamp your business operations and products using emerging
-          technologies.
-        </p>
-        <ViewButton showArrow text="Talk To An Expert" href="#contact" />
+        <ViewButton showArrow text="Talk To us" href="#contact" />
       </Grid>
     </Grid>
   );

@@ -6,7 +6,7 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Button from "@material-ui/core/Button";
 
 import { Box, Grid, withWidth } from "@material-ui/core";
-import { Link } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -29,6 +29,21 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   btnbgclr: {
+    backgroundColor: "white",
+    borderRadius: 40,
+    textTransform: "capitalize",
+    fontSize: 16,
+    textDecoration: "none",
+    fontWeight: 500,
+    paddingLeft: 20,
+    paddingRight: 20,
+    color: "black",
+    "&:hover": {
+      backgroundColor: "black",
+      color: "white",
+    },
+  },
+  btnbgclrBlack: {
     backgroundColor: "black",
     borderRadius: 40,
     textTransform: "capitalize",
@@ -39,12 +54,15 @@ const useStyles = makeStyles((theme) => ({
     paddingRight: 20,
     color: "white",
     "&:hover": {
-      backgroundColor: "black",
+      backgroundColor: "white",
+      color: "black",
     },
   },
   texttransfrm: {
     textTransform: "capitalize",
     fontSize: 16,
+    fontSize: 16,
+    fontFamily: "MyFontRegular",
   },
   appbarclr: {
     backgroundColor: "transparent",
@@ -62,9 +80,11 @@ const useStyles = makeStyles((theme) => ({
 
   logofont: {
     textTransform: "capitalize",
+    textDecoration: "none",
     fontSize: 40,
     fontWeight: 600,
     color: "white",
+    fontFamily: "MyFontRegular",
   },
 }));
 
@@ -93,7 +113,17 @@ function DevelopxAppBarWrapped(props) {
             ]}
           >
             <Box className={classes.contactmargin}>
-              <Box className={classes.logofont} href="#root">
+              <Box
+                className={classes.logofont}
+                href="/#root"
+                component="a"
+                color={
+                  props.match.path.includes("career") ||
+                  props.match.path.includes("portfolio")
+                    ? "black !important"
+                    : "white"
+                }
+              >
                 DevelopX
               </Box>
             </Box>
@@ -115,11 +145,11 @@ function DevelopxAppBarWrapped(props) {
               <Box className={classes.linkmargin}>
                 <Button
                   color="inherit"
-                  href="#portfolio"
+                  href="/#portfolio"
                   className={[
                     classes.hoverEffect,
                     classes.texttransfrm,
-                    props.selected === "2" && classes.btnbgclr,
+                    props.selected === "2" && classes.btnbgclrBlack,
                   ]}
                 >
                   Portfolio
@@ -161,8 +191,7 @@ function DevelopxAppBarWrapped(props) {
                     classes.texttransfrm,
                     props.selected === "3" && classes.btnbgclr,
                   ]}
-                  component={Link}
-                  to="/#contact"
+                  href="/#contact"
                 >
                   Contact
                 </Button>
@@ -189,5 +218,5 @@ function DevelopxAppBarWrapped(props) {
   );
 }
 
-const DevelopxAppBar = withWidth()(DevelopxAppBarWrapped);
+const DevelopxAppBar = withWidth()(withRouter(DevelopxAppBarWrapped));
 export default DevelopxAppBar;
