@@ -37,7 +37,6 @@ export const PortfolioProject = (props) => {
     },
     bgcard: {
       width: "118%",
-      backgroundColor: "transparent",
       padding: 20,
       backgroundColor: "rgba(255, 255, 255, 0.8)",
       boxShadow: "rgba(0, 0, 0, 0.3) 10px 10px 30px 0px;",
@@ -55,6 +54,11 @@ export const PortfolioProject = (props) => {
     },
     imgrotate: {
       transform: " rotate(-45deg)",
+    },
+    tech: {
+      height: 20,
+      marginRight: 8,
+      marginTop: 16,
     },
     linedrawer: {
       backgroundColor: props.color,
@@ -90,6 +94,15 @@ export const PortfolioProject = (props) => {
             <Typography className={[classes.discription, classes.paramargin]}>
               {props.discription2}
             </Typography>
+
+            {props.skills && <h3 style={{color:props.color}}>Technologies:</h3>}
+
+            <Box display="flex" flexWrap="wrap" justifyContent="flex-start">
+              {props.skills &&
+                props.skills.map((skill) => (
+                  <img src={skill} alt="technology" className={classes.tech} />
+                ))}
+            </Box>
           </CardContent>
         </Card>
       </Grid>
