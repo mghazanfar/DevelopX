@@ -1,72 +1,99 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import { Grid, Box } from "@material-ui/core";
-import zhutravelimg from "../../assets/zhutravelimg.png";
+import { Box } from "@material-ui/core";
+import react from "../../assets/react.png";
+import aa from "../../assets/aa.png";
+import pwa from "../../assets/pwa-mg.jpeg";
+import gm from "../../assets/gm.png";
+import expo from "../../assets/expo.png";
+import nb from "../../assets/nb.svg";
+import gatsby from "../../assets/gatsby.png";
+import mb from "../../assets/mb.png";
+import rn from "../../assets/rn.png";
+import ad from "../../assets/ad.png";
+import ws from "../../assets/ws.png";
+import mui from "../../assets/mui.svg";
+import hc from "../../assets/hc.png";
+import ap from "../../assets/ap.png";
+import at from "../../assets/at.svg";
+import bootstrap from "../../assets/boostrap.png";
+import cv from "../../assets/cv.png";
+import aws from "../../assets/aws.png";
+import ups from "../../assets/ups.png";
+import gp from "../../assets/gp.png";
+import gql from "../../assets/gql.png";
+import js from "../../assets/js.png";
+import ts from "../../assets/ts.png";
+import lp from "../../assets/lp.png";
+import mongo from "../../assets/mongo.png";
+import node from "../../assets/node.png";
+import pp from "../../assets/pp.png";
+import venia from "../../assets/venia.svg";
+import vue from "../../assets/vue.png";
+import bc from "../../assets/bc.png";
+import angular from "../../assets/angular.svg";
+
 const useStyles = makeStyles({
   titlefont: {
-    color: "white",
-    backgroundImage: "radial-gradient(#06eac0, transparent)",
     width: "100%",
     textAlign: "center",
     fontWeight: 900,
     marginTop: 91,
     paddingTop: 30,
+    display:"flex",
+    flexDirection:"column",
+    alignItems:"center"
   },
-  imgheight: {
-    maxHeight: 60,
-  },
-  dflex: {
-    display: "flex",
-    padding: 40,
-    alignItems: "center",
-  },
-  imgsize: {
-    height: 100,
-  },
-  mevrisheight: {
-    height: 60,
-  },
+  tech:{
+    height: 40
+  }
 });
 
 export default function GlobalBusiness() {
   const classes = useStyles();
-
+  const techs = [
+    react,
+    angular,
+    vue,
+    node,
+    rn,
+    mongo,
+    venia,
+    pwa,
+    expo,
+    mb,
+    gatsby,
+    mb,
+    lp,
+    ts,
+    gql,
+    js,
+    gp,
+    ups,
+    aws,
+    cv,
+    bootstrap,
+    ap,
+    hc,
+    mui,
+    ad,
+    nb,
+    ws,
+    aa,
+    at,
+    gm,
+    pp,
+    bc,
+  ];
   return (
-    <Box className={classes.titlefont}>
-      TRUSTED BY
-      <Grid className={classes.dflex} spacing={4} container>
-        <Grid xs={12} sm={3} md={6} lg={6} item>
-          <img
-            className={classes.imgheight}
-            src="https://veeve.io/images/logo-sm.svg"
-          />
-        </Grid>
-        <Grid xs={12} sm={3} md={6} lg={6} item>
-          <Box fontSize={60} color="white" fontFamily="cursive">
-            Lavoro
-          </Box>
-        </Grid>
-
-        <Grid xs={12} sm={3} md={6} lg={6} item>
-          <img
-            className={classes.imgheight}
-            src="https://www.hubii.com/wp-content/uploads/2018/05/hubii_core.png"
-          />
-        </Grid>
-
-        <Grid xs={12} sm={3} md={6} lg={6} item>
-          <img src="https://packagex.app/static/PX-logo-8b3db1d7ba148d53e8a18c1bbc9c2a2b.svg" />
-        </Grid>
-        <Grid xs={12} sm={3} md={6} lg={6} item>
-          <img
-            className={classes.mevrisheight}
-            src="https://cdn.shopify.com/s/files/1/0366/2325/3635/t/2/assets/logo.svg?v=16040664564285682502"
-          />
-        </Grid>
-        <Grid xs={12} sm={3} md={6} lg={6} item>
-          <img className={classes.imgsize} src={zhutravelimg} />
-        </Grid>
-      </Grid>
+    <Box className={classes.titlefont} id="tech">
+      <h2>Technologies</h2>
+      <Box display="flex" flexWrap="wrap" justifyContent="center" p={3} maxWidth="70%" alignItems="center">
+        {techs.map(tech=>
+        <Box mt={1} mr={1} border="1px solid grey" borderRadius="8px" p={1} display="flex" alignItems="center" bgcolor="antiquewhite">
+          <img src={tech} alt="tech" className={classes.tech}/>
+        </Box>)}
+      </Box>
     </Box>
   );
 }

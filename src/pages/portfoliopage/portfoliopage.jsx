@@ -8,17 +8,16 @@ import react from '../../assets/react.png'
 import aa from '../../assets/aa.png'
 import gm from '../../assets/gm.png'
 import expo from '../../assets/expo.png'
-import nb from '../../assets/nb.png'
+import nb from '../../assets/nb.svg'
 import gatsby from '../../assets/gatsby.png'
 import mb from '../../assets/mb.png'
-import ad from '../../assets/ad.png'
-import ws from '../../assets/ws.jpeg'
+import rn from '../../assets/rn.png'
+import ws from '../../assets/ws.png'
 import mui from '../../assets/mui.svg'
 import hc from '../../assets/hc.png'
 import ap from '../../assets/ap.png'
 import at from '../../assets/at.svg'
 import bootstrap from '../../assets/boostrap.png'
-import cv from '../../assets/cv.png'
 import aws from '../../assets/aws.png'
 import ups from '../../assets/ups.png'
 import gp from '../../assets/gp.png'
@@ -29,8 +28,7 @@ import lp from '../../assets/lp.png'
 import mongo from '../../assets/mongo.png'
 import node from '../../assets/node.png'
 import pp from '../../assets/pp.png'
-import venia from '../../assets/venia.png'
-import vue from '../../assets/vue.png'
+import venia from '../../assets/venia.svg'
 import bc from '../../assets/bc.png'
 
 const useStyles = makeStyles((theme) => ({
@@ -94,7 +92,7 @@ export const PortfolioPage = (props) => {
         reverse
         color="#2670df"
         image={require("../../assets/ecency.png")}
-        skills={[react,js,node, ts, mongo, bootstrap,bc,hc]}
+        skills={[react,js,node, ts, mongo, bootstrap,bc,hc, rn]}
       />
 
       <PortfolioProject
@@ -111,7 +109,7 @@ export const PortfolioPage = (props) => {
         color="crimson"
         image={require("../../assets/px.webp")}
         reverse
-        skills={[react,js,node, mongo, mui,hc, aws, ]}
+        skills={[react,js,node, mongo, mui,hc, aws, rn ]}
       />
       <PortfolioProject
         title=" Hubbi core"
@@ -128,7 +126,7 @@ export const PortfolioPage = (props) => {
         color="darkslateblue"
         image={require("../../assets/mevris.jpeg")}
         reverse
-        skills={[react,js,node,lp, ts, mongo, bootstrap,hc, gm, aws,nb, expo ]}
+        skills={[react,js,node,lp, ts, mongo, bootstrap,hc, gm, aws,nb, expo, rn ]}
               />
       <PortfolioProject
         title=" zhutravel"
@@ -142,7 +140,7 @@ export const PortfolioPage = (props) => {
         discription2="Veeve's proprietary computer vision algorithms extracts visual features (produce & barcode items) for instant recognition. Swappable battery technology keeps the carts running all day. The cart can automatically capture the item weight and calculate price."
         color="black"
         image="https://veeve.io/images/img-cart-veeve.png"
-        skills={[react,js,node, mongo,mui, nb, ws,expo ]}
+        skills={[react,js,node, mongo,mui, rn ,nb, ws,expo ]}
         reverse
       />
       <PortfolioProject
@@ -152,7 +150,7 @@ export const PortfolioPage = (props) => {
         FAQs and much more."
         color="#1e9ad7"
         image={require("../../assets/bridger.jpeg")}
-        skills={[react,expo,js,node, mongo, nb]}
+        skills={[react,expo,js,node, mongo, nb, rn]}
       />
       <Box marginBottom="200px">
       </Box>

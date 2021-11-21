@@ -173,13 +173,13 @@ function DevelopxAppBarWrapped(props) {
                     classes.texttransfrm,
                     selected === "5" && classes.btnbgclr,
                   ]}
-                  href="#tech"
+                  href="/#tech"
                   onClick={()=>setSelected("5")}
                 >
                   Technologies
                 </Button>
               </Box>
-              <Box className={classes.linkmargin}>
+              {/* <Box className={classes.linkmargin}>
                 <Button
                   color="inherit"
                   className={[
@@ -192,7 +192,7 @@ function DevelopxAppBarWrapped(props) {
                 >
                   Our team
                 </Button>
-              </Box>
+              </Box> */}
 
               <Box className={classes.linkmargin}>
                 <Button

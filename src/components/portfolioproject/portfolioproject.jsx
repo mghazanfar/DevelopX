@@ -56,7 +56,7 @@ export const PortfolioProject = (props) => {
       transform: " rotate(-45deg)",
     },
     tech: {
-      height: 20,
+      height: 30,
       marginRight: 8,
       marginTop: 16,
     },

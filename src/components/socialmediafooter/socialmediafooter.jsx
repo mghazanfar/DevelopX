@@ -45,7 +45,7 @@ export const SocialMediaFooter = (props) => {
       </Grid>
       <Grid item xs={12} sm={6} md={5}>
         <Box display="flex" flexWrap="wrap" justifyContent="flex-end">
-          <IconButton disabled>
+          {/* <IconButton disabled>
             <img
               className={classes.iconheight}
               src="https://t3.ftcdn.net/jpg/03/55/44/12/240_F_355441218_6WGdy8l7ioj7nYmiubYuSl3PUZa3Mk5I.jpg"
@@ -57,7 +57,7 @@ export const SocialMediaFooter = (props) => {
               className={classes.iconheight}
               src="https://t4.ftcdn.net/jpg/03/55/82/99/240_F_355829900_j65FCzRYlQ0CoCCcroralqNiehTXzIKY.jpg"
             />
-          </IconButton>
+          </IconButton> */}
 
           <IconButton
             href="https://www.linkedin.com/company/developx-tech/"
@@ -69,7 +69,7 @@ export const SocialMediaFooter = (props) => {
             />
           </IconButton>
 
-          <IconButton disabled>
+          {/* <IconButton disabled>
             <img
               className={classes.iconheight}
               src="https://t4.ftcdn.net/jpg/03/54/82/19/240_F_354821928_IPj5kHBaqTiBuiKnZwH0LraYiRcxaaAj.jpg"
@@ -81,6 +81,7 @@ export const SocialMediaFooter = (props) => {
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT6KYd8qhqe0PkWaTvBqfhtdWsU1lpsnpyCWg&usqp=CAU"
             />
           </IconButton>
+         */}
         </Box>
       </Grid>
     </Grid>
